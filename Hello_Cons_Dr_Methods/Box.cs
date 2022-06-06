@@ -40,8 +40,10 @@ namespace Hello_Cons_Dr_Methods
                 Console.Write(symbol);
                 x++;
             }
+
             x = initial_x;
             y = initial_y;
+
             for (int i = 0; i < height; i++)
             {
                 Console.SetCursorPosition(x, y + 1);
@@ -50,10 +52,13 @@ namespace Hello_Cons_Dr_Methods
                 Console.WriteLine(symbol);
                 y++;
             }
+           
             Console.WriteLine();
             Console.SetCursorPosition(srting_x, srting_y);
             Console.WriteLine(messege_input);
-            Console.WriteLine();
+            x = initial_x;
+            y = initial_y;
+            Console.SetCursorPosition(x, y + height + 2);
         }
     }
 }

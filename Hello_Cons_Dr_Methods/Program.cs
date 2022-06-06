@@ -10,7 +10,7 @@ namespace Hello_Cons_Dr_Methods
     {
         static void Main(string[] args)
         {
-            Box box = new Box(10, 5, 20, 8, '*', "hi boys");
+            Box box = new Box(10, 5, 2, 10, '*', "hi boys");
             box.draw();
             try
             {
