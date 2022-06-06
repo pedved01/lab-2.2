@@ -10,9 +10,8 @@ namespace Hello_Cons_Dr_Methods
     {
         static void Main(string[] args)
         {
-            Box box = new Box(10, 12, 14, 16, '*', "hi girls");
+            Box box = new Box(10, 5, 20, 8, '*', "hi boys");
             box.draw();
-
             try
             {
                 Console.WriteLine("Press any key...");
