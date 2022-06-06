@@ -15,7 +15,7 @@ namespace Hello_Cons_Dr_Methods
         public char symbol { get; set; }
         public string messege_input { get; set; }
         public Box(int x, int y, int width, int height, char symbol, string messege_input)
-        {
+        { 
             this.x = x;
             this.y = y;
             this.width = width;
