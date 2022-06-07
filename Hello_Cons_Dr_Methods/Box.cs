@@ -27,37 +27,42 @@ namespace Hello_Cons_Dr_Methods
         {
             int initial_x = x;
             int initial_y = y;
-            int width = Math.Max(this.width, messege_input.Length);
+            int width = Math.Max(this.width, messege_input.Length) + 1;
             int srting_x = x + ((width - messege_input.Length) / 2) + 1;
             int srting_y = y + (height / 2);
 
             for (int i = 0; i <= width; i++)
             {
                 
-                Console.SetCursorPosition(x,y);
+                Console.SetCursorPosition(initial_x, y);
                 Console.Write(symbol);
-                Console.SetCursorPosition(x, y + height);
+                Console.SetCursorPosition(initial_x, y + height);
                 Console.Write(symbol);
-                x++;
+                initial_x++;
             }
-
-            x = initial_x;
-            y = initial_y;
-
-            for (int i = 0; i < height; i++)
+            for (int i = 0; i <= height; i++)
             {
-                Console.SetCursorPosition(x, y + 1);
+                Console.SetCursorPosition(initial_x - width - 1, initial_y);
                 Console.WriteLine(symbol);
-                Console.SetCursorPosition(x + width, y);
+                Console.SetCursorPosition(initial_x, initial_y);
                 Console.WriteLine(symbol);
-                y++;
+                initial_y++;
             }
+
+            //for (int i = 0; i < height; i++)
+            //{
+            //    Console.SetCursorPosition(x, y + 1);
+            //    Console.WriteLine(symbol);
+            //    Console.SetCursorPosition(x + width, y);
+            //    Console.WriteLine(symbol);
+            //    y++;
+            //}
            
             Console.WriteLine();
             Console.SetCursorPosition(srting_x, srting_y);
             Console.WriteLine(messege_input);
-            x = initial_x;
-            y = initial_y;
+            //x = initial_x;
+            //y = initial_y;
             Console.SetCursorPosition(x, y + height + 2);
         }
     }
